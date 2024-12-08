@@ -1,0 +1,15 @@
+# macOS-spezifische Dateien
+.DS_Store
+
+# PDFs ausschließen (z.B. Lebenslauf)
+Lebenslauf-Mermer.pdf
+
+# Node modules (falls zutreffend)
+node_modules/
+
+# Log-Dateien
+*.log
+
+# Andere sensible oder unnötige Dateien
+.env
+.vscode/
