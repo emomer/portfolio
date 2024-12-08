@@ -13,3 +13,7 @@ node_modules/
 # Andere sensible oder unnötige Dateien
 .env
 .vscode/
+
+# Ausschließen der images und fonts Ordner
+/images/
+/fonts/
