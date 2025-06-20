@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* jetbrains-mono-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/jetbrains-mono-v20-latin-regular.woff2") format("woff2");
+}
+
+/* jetbrains-mono-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/jetbrains-mono-v20-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --primary-color: #0091fb;
+  --black-color: #cecece;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: normal;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.5;
+  background-color: #121212;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  letter-spacing: -1px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* ------------ MEDIA QUERIES ----------- */
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+}
