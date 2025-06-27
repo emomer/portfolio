@@ -10,9 +10,9 @@ export default function ProjectItem({
   const reverse = index % 2 === 1;
   return (
     <div
-      className={`flex flex-col md:flex-row gap-10 ${
+      className={`flex flex-col md:flex-row gap-10 mb-15 sm:mb-5 ${
         reverse ? "md:flex-row-reverse" : ""
-      } items-center gap-15`}
+      } items-center`}
     >
       {/* Bild-Container */}
       <div className="w-full md:w-[50%] bg-gray-800 rounded-lg overflow-hidden shadow-lg">
