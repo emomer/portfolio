@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/portfolio/", // Repo-Name mit führendem & abschließendem Slash
+  base: "/portfolio/",
+  build: { outDir: "docs" },
   plugins: [react(), tailwindcss()],
 });
