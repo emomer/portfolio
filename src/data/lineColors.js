@@ -1,4 +1,3 @@
-// hell → dunkel   (du kannst die Hex-Werte gerne austauschen)
 export const lineColors = [
   "#34c5ff",
   "#26b7ff",
